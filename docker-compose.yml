@@ -1,0 +1,16 @@
+web:
+  build: ./containers/web
+  links:
+    - db:mysql-server
+  ports:
+    - 8000:80
+  volumes:
+    - ./app:/var/www/html
+
+db:
+  image: mysql:5.6.28
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_DATABASE: sample
+    MYSQL_ROOT_PASSWORD: hogehoge
