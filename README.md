@@ -5,7 +5,7 @@
 - Docker Toolbox
 
 ## サンプルコードを持ってくる
-`git clone https://github.com/a4t/docker-php-mysql.git`
+`$ git clone https://github.com/a4t/docker-php-mysql.git`
 
 ## Docker Toolboxのダウンロード
 https://www.docker.com/docker-toolbox
