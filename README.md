@@ -26,9 +26,13 @@ $ docker-compose up -d
 ```
 
 ## ブラウザで確認
-先ほどのIPを使ってブラウザでアクセスする
-もしくは `curl $(docker-machine ip default):8080/index.php` で `Hello World` が表示されればOK
-MySQLとの疎通確認は `curl $(docker-machine ip default):8000/mysql.php` で `Connect MySQL` と表示されればOK
+- 先ほどのIPを使ってブラウザでアクセスする
+
+- もしくは `curl $(docker-machine ip default):8080/index.php`
+  - `Hello World` が表示されればOK
+
+- MySQLとの疎通確認は `curl $(docker-machine ip default):8000/mysql.php`
+  - `Connect MySQL` と表示されればOK
 
 ## 開発方法
 `app/` 以下を適当にいじればいい
