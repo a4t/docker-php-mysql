@@ -1,11 +1,11 @@
 # PHPとMySQLをとりあえず使い人向け
 
 ## 必要なもの
-Git
-Docker Toolbox
+- Git
+- Docker Toolbox
 
 ## サンプルコードを持ってくる
-git clone https://github.com/a4t/docker-php-mysql.git
+`git clone https://github.com/a4t/docker-php-mysql.git`
 
 ## Docker Toolboxのダウンロード
 https://www.docker.com/docker-toolbox
@@ -36,11 +36,11 @@ MySQLとの疎通確認は `curl $(docker-machine ip default):8000/mysql.php` �
 ## Docker Machineの止め方
 Docker Machine は起動していると仮想CPU2個とメモリ2G専有するので使わなくなったら落とすと良い
 ```
-docker-machine stop default
+$ docker-machine stop default
 ```
 
 起動方法(たまにDocker Machine落ちるのでその際もこのコマンド)
 ```
-docker-machine start default
+$ docker-machine start default
 eval ~~~ ってところからまた始めること
 ```
